@@ -1,0 +1,98 @@
+{
+  "name": "fbi-project-vue-multipage",
+  "version": "1.1.1",
+  "description": "FullPack template for fbi.",
+  "author": "fbi",
+  "license": "MIT",
+  "repository": {},
+  "scripts": {
+    "release-patch": "npm version patch && git push && git push --tags",
+    "release-minor": "npm version minor && git push && git push --tags",
+    "release-major": "npm version major && git push && git push --tags"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "browser-sync": "^2.17.5",
+    "copy-webpack-plugin": "^4.0.0",
+    "css-loader": "^0.26.1",
+    "cssnano": "^3.8.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb-base": "^10.0.1",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-html": "^2.0.1",
+    "eslint-plugin-import": "^2.0.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "^0.9.0",
+    "fs-extra": "^5.0.0",
+    "glob": "^7.1.2",
+    "handlebars": "^4.0.5",
+    "handlebars-loader": "^1.4.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.24.1",
+    "koa": "^2.0.0-alpha.7",
+    "koa-proxies": "^0.6.2",
+    "koa-static": "^3.0.0",
+    "koa-webpack-dev-middleware": "^1.2.2",
+    "koa-webpack-hot-middleware": "^1.0.3",
+    "loader-utils": "^0.2.16",
+    "node-sass": "^3.13.0",
+    "postcss-loader": "^1.1.0",
+    "postcss-reporter": "^1.4.1",
+    "precss": "^1.4.0",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "stylelint": "^7.5.0",
+    "stylelint-config-standard": "^15.0.0",
+    "svg-sprite-loader": "^4.1.3",
+    "url-loader": "^0.5.7",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^11.3.4",
+    "vue-server-renderer": "^2.5.13",
+    "vue-template-compiler": "^2.2.6",
+    "webpack": "^2.2.0-rc.3",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "vue": "^2.2.6",
+    "vue-resource": "^1.3.1",
+    "vue-router": "^2.4.0",
+    "vuex": "^2.3.0",
+    "vuex-router-sync": "^4.1.2"
+  },
+  "fbi": {
+    "template": {
+      "name": "fbi-project-vue-multipage"
+    },
+    "tasks": {
+      "build": {
+        "alias": "b",
+        "desc": "打包"
+      },
+      "serve": {
+        "alias": "s",
+        "desc": "启动开发服务器"
+      },
+      "ssr": {
+        "alias": "ssr",
+        "desc": "ssr构建"
+      },
+      "cdn": {
+        "alias": "c",
+        "desc": "cdn打包"
+      },
+      "offline": {
+        "alias": "o",
+        "desc": "离线包打包"
+      }
+    }
+  }
+}
